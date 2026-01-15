@@ -1,0 +1,5 @@
+CITIES = [
+    "kathmandu",
+    "pokhara",
+    "biratnagar"
+]

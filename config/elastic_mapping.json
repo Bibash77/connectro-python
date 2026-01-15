@@ -1,0 +1,35 @@
+{
+  "settings": {
+    "number_of_shards": 1,
+    "number_of_replicas": 0
+  },
+  "mappings": {
+    "dynamic": "strict",
+    "properties": {
+      "listing_id": { "type": "keyword" },
+      "name": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "category": { "type": "keyword" },
+      "phones": {
+        "type": "nested",
+        "properties": {
+          "number": { "type": "keyword" },
+          "masked_number": { "type": "keyword" },
+          "primary": { "type": "boolean" }
+        }
+      },
+      "location": { "type": "geo_point" },
+      "city": { "type": "keyword" },
+      "confidence_score": { "type": "float" },
+      "source": { "type": "keyword" },
+      "updated_at": { "type": "date" }
+    }
+  }
+}

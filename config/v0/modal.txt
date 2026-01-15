@@ -1,0 +1,55 @@
+curl -X POST "http://localhost:9200/_aliases" \
+     -H 'Content-Type: application/json' \
+     -d '{
+  "actions": [
+    {
+      "add": {
+        "index": "listings_v0_kathmandu",
+        "alias": "listings_v0_search"
+      }
+    }
+  ]
+}'
+;
+
+
+
+
+
+curl -X PUT "http://localhost:9200/listings_v0_kathmandu" \
+     -H 'Content-Type: application/json' \
+     -d '{
+  "settings": {
+    "number_of_shards": 1,
+    "number_of_replicas": 0
+  },
+  "mappings": {
+    "dynamic": "strict",
+    "properties": {
+      "listing_id": { "type": "keyword" },
+      "name": {
+        "type": "text",
+        "fields": {
+          "keyword": {
+            "type": "keyword",
+            "ignore_above": 256
+          }
+        }
+      },
+      "category": { "type": "keyword" },
+      "phones": {
+        "type": "nested",
+        "properties": {
+          "number": { "type": "keyword" },
+          "masked_number": { "type": "keyword" },
+          "primary": { "type": "boolean" }
+        }
+      },
+      "location": { "type": "geo_point" },
+      "city": { "type": "keyword" },
+      "confidence_score": { "type": "float" },
+      "source": { "type": "keyword" },
+      "updated_at": { "type": "date" }
+    }
+  }
+}'

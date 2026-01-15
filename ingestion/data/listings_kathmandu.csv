@@ -1,0 +1,11 @@
+listing_id,name,category,phone_numbers,masked_phone_numbers,primary_phone_index,latitude,longitude,city,confidence_score,source,updated_at
+ktm_plumber_9812345678,Sharma Plumbing Service,Plumber,9812345678|014567890,98xxxx5678|01xxxx890,0,27.700769,85.300140,kathmandu,0.93,google_maps,2025-12-15T10:20:00Z
+ktm_electric_9841122334,Rajesh Electric Repair Center,Electrician,9841122334,98xxxx2334,0,27.717245,85.323960,kathmandu,0.90,google_maps,2025-12-15T10:21:00Z
+ktm_mechanic_9809988776,Kathmandu Auto Workshop,Mechanic,9809988776|015551234,98xxxx8776|01xxxx234,0,27.689233,85.292344,kathmandu,0.88,google_maps,2025-12-15T10:22:00Z
+ktm_internet_9818899775,Himalayan Internet Solutions,Internet Service Provider,9818899775,98xxxx9775,0,27.708921,85.315231,kathmandu,0.95,company_site,2025-12-15T10:23:00Z
+ktm_ac_9841556677,CoolTech AC Services,AC Repair,9841556677|014421199,98xxxx6677|01xxxx199,0,27.673882,85.325541,kathmandu,0.89,google_maps,2025-12-15T10:24:00Z
+ktm_computer_9801122445,Nepal Computer Repair Hub,Computer Repair,9801122445,98xxxx2445,0,27.721334,85.310912,kathmandu,0.91,google_maps,2025-12-15T10:25:00Z
+ktm_carpenter_9815566778,Biswakarma Furniture Works,Carpenter,9815566778,98xxxx6778,0,27.684512,85.305412,kathmandu,0.87,local_directory,2025-12-15T10:26:00Z
+ktm_mobile_9841998833,Mobile Care Kathmandu,Mobile Repair,9841998833|014333221,98xxxx8833|01xxxx221,0,27.702144,85.318299,kathmandu,0.92,google_maps,2025-12-15T10:27:00Z
+ktm_cleaning_9804455667,Everest Cleaning Services,Cleaning Service,9804455667,98xxxx5667,0,27.691223,85.287654,kathmandu,0.86,facebook_page,2025-12-15T10:28:00Z
+ktm_painter_9819988771,New Vision Painting Works,Painter,9819988771,98xxxx8771,0,27.709812,85.299876,kathmandu,0.85,local_directory,2025-12-15T10:29:00Z
